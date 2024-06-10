@@ -1,0 +1,11 @@
+@forward "./utility";
+@use "./utility" as util;
+
+@mixin social-color($color) {
+  color: $color;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color;
+    color: util.$light-white-color;
+  }
+}

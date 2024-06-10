@@ -1,0 +1,73 @@
+@forward "./utility";
+
+@use "./utility" as util;
+
+body {
+  font-family: util.$font-family;
+  font-size: util.$paragraph-font-size;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: util.$heading-font-weight;
+  line-height: util.$heading-line-height;
+}
+p {
+  font-size: util.$paragraph-font-size;
+  font-weight: util.$paragraph-font-weight;
+  line-height: util.$paragraph-line-height;
+}
+h2 {
+  font-size: 24px;
+  font-weight: util.$heading-font-weight;
+  line-height: util.$heading-line-height;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: util.$heading-font-weight;
+}
+a {
+  color: inherit;
+}
+a,
+span,
+small {
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+a,
+button {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 03s;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+a:focus,
+.btn:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+// Background color
+.th-bg-primary {
+  background-color: util.$primary-color;
+}
+.th-bg-white {
+  background-color: util.$white-color;
+}
+.th-bg-black-light {
+  background-color: util.$light-black-color;
+}
+.th-bg-white-light {
+  background-color: util.$light-white-color;
+}
