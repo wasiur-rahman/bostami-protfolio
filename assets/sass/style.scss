@@ -82,6 +82,7 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+  // social icon
   .social ul li {
     .facebook {
       @include mixins.social-color(util.$facebook-color);
@@ -95,5 +96,70 @@ h1 {
     .instagram {
       @include mixins.social-color(util.$instagram-color);
     }
+  }
+}
+// contact info
+.contact-info {
+  .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: util.$white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  i {
+    font-size: 22px;
+  }
+  .text {
+    text-align: left;
+    span {
+      color: util.$light-black-color;
+      font-size: 12px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+      color: util.$black-color;
+    }
+  }
+
+  .phone {
+    @include mixins.contact-icon-color(util.$deep-pink-color);
+  }
+  .email {
+    @include mixins.contact-icon-color(util.$catkrill-color);
+  }
+  .location {
+    @include mixins.contact-icon-color(util.$light-pink-color);
+  }
+  .birthday {
+    @include mixins.contact-icon-color(util.$midim-pink-color);
+  }
+  hr {
+    color: util.$light-black-color;
+  }
+}
+// Download Button
+.download-btn {
+  background-color: util.$primary-color;
+  color: util.$white-color;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.3s;
+  border: 1px solid util.$primary-color;
+  &:hover {
+    background-color: util.$light-white-color;
+    border: 1px solid util.$primary-color;
+    color: util.$primary-color;
   }
 }

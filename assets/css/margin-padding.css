@@ -127,6 +127,9 @@
   padding-right: 100px;
 }
 /* Padding Left */
+.th-pl-0 {
+  padding-left: 0;
+}
 .th-pl-5 {
   padding-left: 5px;
 }

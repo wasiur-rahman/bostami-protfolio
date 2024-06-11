@@ -9,3 +9,7 @@
     color: util.$light-white-color;
   }
 }
+
+@mixin contact-icon-color($color) {
+  color: $color;
+}
