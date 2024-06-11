@@ -45,25 +45,27 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/margin-padding.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <title>Protfolio</title>
   </head>
   <body class="th-py-50">
     <header class="th-mb-30">
-      <div class="container position-relative">
-        <div class="row justify-content-between">
-          <div class="col-md-6">
-            <p>M. W. Rahman</p>
-          </div>
-          <div class="col-md-6 d-flex justify-content-end align-items-center">
-            <div class="menu-btn">
-              <span></span>
-              <span></span>
-              <span></span>
+      <div class="container">
+        <div class="position-relative">
+          <div class="row justify-content-between">
+            <div class="col-md-6">
+              <p>M. W. Rahman</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+              <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Menu -->
+           <!-- Menu -->
         <div class="position-absolute w-100 th-mt-30 menu-area">
           <ul class="navbar-nav th-bg-white rounded-4 th-p-30">
             <li class="nav-item">
@@ -98,13 +100,16 @@
             </li>
           </ul>
         </div>
+        </div>
+        
+       
       </div>
     </header>
     <section>
       <div class="container">
-        <row>
+        <div class="row">
           <div class="col-md-3 com-sm-12">
-            <div class="text-center th-bg-white th-p-30 rounded-4">
+            <div class="text-center th-bg-white th-p-25 rounded-4 position-sticky top-0">
               <div>
                 <img
                   src="assets/images/parson-img-1.png"
@@ -193,18 +198,143 @@
               <!-- CV button -->
               <button class="th-mt-30 border-0">
                 <a href="" class="download-btn"
-                  ><i class="fa-regular fa-download"></i>Download CV</a
+                  ><i class="fa-regular fa-download"></i>Download Cv</a
                 >
               </button>
             </div>
           </div>
-          <div class="col-md-9 com-sm-12 th-bg-white h-100"></div>
-        </row>
+          <div class="col-md-9 com-sm-12">
+            <div
+              class="content-area th-bg-white th-pt-50 th-px-60 rounded-top-4 "
+            >
+              <div class="top-content-area">
+                <div class="title d-flex align-items-center gap-4">
+                  <h1 class="th-mt-20 page-title">About</h1>
+                </div>
+                <div class="text">
+                  <p class="th-mt-10 th-light-black-color">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+              <!-- Middle Content Area -->
+              <div class="middel-content-area th-mt-30 th-py-30">
+                <h2 class="th-my-20">What I Do!</h2>
+
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div
+                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-pink th-mb-20"
+                    >
+                      <div class="icon th-midiam-pink-color">
+                        <i class="fa-light fa-swatchbook"></i>
+                      </div>
+                      <div class="content">
+                        <h3>Ui/Ux Design</h3>
+                        <p class="th-light-black-color">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit, sed diam euismod tincidunt volutpat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div
+                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-carkill th-mb-20"
+                    >
+                      <div class="icon th-pink-color">
+                        <i class="fa-regular fa-grid-2"></i>
+                      </div>
+                      <div class="content">
+                        <h3>App Development</h3>
+                        <p class="th-light-black-color">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit, sed diam euismod tincidunt volutpat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div
+                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-carkill th-mb-20"
+                    >
+                      <div class="icon th-pink-color">
+                        <i class="fa-regular fa-camera-retro"></i>
+                      </div>
+                      <div class="content">
+                        <h3>Photography</h3>
+                        <p class="th-light-black-color">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit, sed diam euismod tincidunt volutpat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <div
+                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-pink th-mb-20"
+                    >
+                      <div class="icon th-primary-color">
+                        <i class="fa-regular fa-code"></i>
+                      </div>
+                      <div class="content">
+                        <h3>Web Development</h3>
+                        <p class="th-light-black-color">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit, sed diam euismod tincidunt volutpat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- client section -->
+            <div
+              class="content-area th-bg-white-light th-px-60"
+            >
+              <div class="text-center th-pt-30">
+                <h2 class="th-my-20">Client</h2>
+                <div class="client-logo-slider th-py-40">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/images/client-logo-1.png" alt="client-logo-1" class="img-fluid"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-2.png" alt="client-logo-2"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-3.png" alt="client-logo-3"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-4.png" alt="client-logo-4"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-1.png" alt="client-logo-1"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-2.png" alt="client-logo-2"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-3.png" alt="client-logo-3"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-4.png" alt="client-logo-4"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-3.png" alt="client-logo-3"></div>
+                      <div class="swiper-slide"><img src="assets/images/client-logo-4.png" alt="client-logo-4"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copywrite section -->
+        <div
+        class="content-area th-bg-white th-px-60 rounded-bottom-4"
+      >
+        <div class="text-center">
+          <span class=" th-py-30 text-center">Copyright © 2024. All rights reserved. </span>
+        </div>
+        </div>
       </div>
     </section>
     <!-- Js -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.3.7.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

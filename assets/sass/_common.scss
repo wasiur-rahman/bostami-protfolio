@@ -71,7 +71,34 @@ button:focus {
 .th-bg-white-light {
   background-color: util.$light-white-color;
 }
+.th-bg-light-carkill {
+  background-color: util.$light-carkill-color;
+}
+.th-bg-light-pink {
+  background-color: #fff4f4;
+}
+
 // Font size
 .th-fs-14 {
   font-size: 14px;
+}
+// Font color
+.th-primary-color {
+  color: util.$primary-color;
+}
+.th-black-color {
+  color: util.$black-color;
+}
+.th-light-black-color {
+  color: util.$light-black-color;
+}
+
+.th-midiam-pink-color {
+  color: util.$midim-pink-color;
+}
+.th-carkill-color {
+  color: util.$catkrill-color;
+}
+.th-pink-color {
+  color: #ff6080;
 }
