@@ -209,3 +209,184 @@ body {
     height: 62px;
   }
 }
+
+// Blogs
+// slider
+.blog {
+  .swiper {
+    width: 100%;
+    padding-bottom: 50px;
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card a {
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+      }
+      .card a img {
+        transition: 0.3s;
+      }
+      // sigle blog slider
+      .blog-slider-single {
+        &:hover {
+          img {
+            transform: scale(1.2);
+            overflow: hidden;
+          }
+        }
+      }
+      .dot {
+        position: relative;
+      }
+      .dot::after {
+        width: 4px;
+        height: 4px;
+        background-color: util.$light-black-color;
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-pagination-bullet {
+      background-color: util.$light-white-color;
+      border: 2px solid util.$deep-pink-color;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: red;
+      border: 2px solid util.$deep-pink-color;
+    }
+  }
+}
+// contact page
+// .contact{}
+.contact form {
+  label {
+    display: block;
+    color: util.$light-black-color;
+  }
+  input,
+  textarea {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid util.$light-black-color;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+  .height {
+    height: 30px;
+  }
+  .submit-btn {
+    border: 1px solid util.$black-color;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    &:hover {
+      background-color: util.$primary-color;
+      border: 1px solid util.$primary-color;
+      color: util.$white-color;
+    }
+  }
+}
+// works
+/* ---- button ---- */
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 7px;
+  color: util.$black-color;
+  cursor: pointer;
+  background-color: util.$white-color;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  color: util.$primary-color;
+}
+
+.button:active,
+.button.is-checked {
+  color: util.$primary-color;
+}
+
+.button.is-checked {
+  color: util.$primary-color;
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.button-group {
+  display: flex;
+  justify-content: end;
+}
+.button-group .button {
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child {
+  border-radius: 0.5em 0 0 0.5em;
+}
+.button-group .button:last-child {
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+/* ---- grid ---- */
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  a {
+    overflow: hidden;
+  }
+  a img {
+    transition: 0.3s;
+    width: 100%;
+  }
+  // sigle blog slider
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}

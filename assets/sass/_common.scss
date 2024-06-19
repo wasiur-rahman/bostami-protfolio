@@ -38,8 +38,11 @@ span,
 small {
   display: inline-block;
 }
-ul {
+ul,
+ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a,
 button {
@@ -77,7 +80,26 @@ button:focus {
 .th-bg-light-pink {
   background-color: #fff4f4;
 }
+.th-bg-light-2 {
+  background-color: util.$bg-light-2;
+}
+// Progressbar Background
+.th-progress-bar-1 {
+  background: util.$progress-bar-1;
+}
+.th-progress-bar-2 {
+  background-color: util.$progress-bar-2;
+}
 
+.th-progress-bar-3 {
+  background-color: util.$progress-bar-3;
+}
+.th-progress-bar-4 {
+  background-color: util.$progress-bar-4;
+}
+.th-bg-gk {
+  background-color: util.$gk-bg-color;
+}
 // Font size
 .th-fs-14 {
   font-size: 14px;

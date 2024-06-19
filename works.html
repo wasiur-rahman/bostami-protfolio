@@ -44,8 +44,8 @@
     <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css" /> -->
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/margin-padding.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/margin-padding.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <title>Protfolio</title>
   </head>
@@ -69,31 +69,31 @@
         <div class="position-absolute w-100 th-mt-30 menu-area">
           <ul class="navbar-nav th-bg-white rounded-4 th-p-30">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active"
+              <a href="index.html" class="nav-link "
                 ><i class="fa-light fa-address-card th-mr-10"></i
                 ><span>About</span></a
               >
             </li>
             <li>
-              <a href="resume.html" class="nav-link"
+              <a href="resume.html" class="nav-link "
                 ><i class="fa-light fa-file-user th-mr-10"></i
                 ><span>Resume</span></a
               >
             </li>
             <li>
-              <a href="works.html" class="nav-link"
+              <a href="works.html" class="nav-link active"
                 ><i class="fa-light fa-briefcase th-mr-10"></i
                 ><span>Works</span></a
               >
             </li>
             <li>
-              <a href="blog.html" class="nav-link"
+              <a href="blog.html" class="nav-link "
                 ><i class="fa-light fa-newspaper th-mr-10"></i
                 ><span>Blogs</span></a
               >
             </li>
             <li>
-              <a href="contact.html" class="nav-link"
+              <a href="contact.html" class="nav-link "
                 ><i class="fa-light fa-address-book th-mr-10"></i
                 ><span>Contact</span></a
               >
@@ -117,7 +117,7 @@
                   alt="md-wasiur-rahman"
                 />
               </div>
-              <div class="personal-info">
+              <div class="personal-info th-mb-20">
                 <div class="name">
                   <h4 class="th-mt-25">Md Wasiur Rahman</h4>
                 </div>
@@ -207,120 +207,95 @@
             <div
               class="content-area th-bg-white th-pt-50 th-px-60 rounded-top-4 "
             >
-              <div class="top-content-area">
+              <div class="top-content-area ">
                 <div class="title d-flex align-items-center gap-4">
-                  <h1 class="th-mt-20 page-title">About</h1>
+                  <h1 class="th-mt-20 page-title">Works</h1>
                 </div>
-                <div class="text">
-                  <p class="th-mt-10 th-light-black-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    <br /><br />
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                </div>
+                
               </div>
-              <!-- Middle Content Area -->
-              <div class="middel-content-area th-mt-30 th-py-30">
-                <h2 class="th-my-20">What I Do!</h2>
+              <!-- project -->
+                <div id="filters" class="button-group filter-button-group th-py-20">
+                  <button class="button is-checked" data-filter="*">All</button>
+                  <button class="button" data-filter=".mockup">mockup</button>
+                  <button class="button" data-filter=".graphic">graphic design</button>
+                  <button class="button" data-filter=".logo">logo</button>
+                </div>
 
-                <div class="row">
-                  <div class="col-sm-6 col-12">
-                    <div
-                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-pink th-mb-20"
-                    >
-                      <div class="icon th-midiam-pink-color">
-                        <i class="fa-light fa-swatchbook"></i>
-                      </div>
-                      <div class="content">
-                        <h3>Ui/Ux Design</h3>
-                        <p class="th-light-black-color">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit, sed diam euismod tincidunt volutpat.
-                        </p>
+                <div class="grid">
+                 <div class="grid-sizer"></div> 
+                 <!-- item one -->
+                  <div class="grid-item logo" data-filter="logo">
+                    <div class="card border-0 th-bg-light-pink">
+                      <a href="" class="rounded th-m-10 text-center"><img src="assets/images/work-img-1.png" class="rounded" alt=""></a>
+                      <div class="card-body th-pb-0">
+                        <div class="blog-meta fs-6 th-light-black-color">
+                          <span class=" th-pr-5">27 April</span>
+                        </div>
+                        <div class="card-title fw-semibold th-mt-5">Md Wasiur Rahman</div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-12">
-                    <div
-                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-carkill th-mb-20"
-                    >
-                      <div class="icon th-pink-color">
-                        <i class="fa-regular fa-grid-2"></i>
-                      </div>
-                      <div class="content">
-                        <h3>App Development</h3>
-                        <p class="th-light-black-color">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit, sed diam euismod tincidunt volutpat.
-                        </p>
+                  <!-- item two -->
+                  <div class="grid-item graphic">
+                    <div class="card border-0  th-bg-light-carkill">
+                      <a href="" class="th-m-10 text-center rounded"><img src="assets/images/work-img-2.png" class="rounded" alt=""></a>
+                      <div class="card-body th-pb-0">
+                        <div class="blog-meta fs-6 th-light-black-color">
+                          <span class=" th-pr-5">27 April</span>
+                        </div>
+                        <div class="card-title fw-semibold">Md Wasiur Rahman</div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-12">
-                    <div
-                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-carkill th-mb-20"
-                    >
-                      <div class="icon th-pink-color">
-                        <i class="fa-regular fa-camera-retro"></i>
-                      </div>
-                      <div class="content">
-                        <h3>Photography</h3>
-                        <p class="th-light-black-color">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit, sed diam euismod tincidunt volutpat.
-                        </p>
+                  <!-- item three -->
+                  <div class="grid-item logo mockup">
+                    <div class="card border-0  th-bg-light-carkill">
+                      <a href="" class="th-m-10 text-center rounded"><img src="assets/images/work-img-3.png" class="rounded" alt=""></a>
+                      <div class="card-body th-pb-0">
+                        <div class="blog-meta fs-6 th-light-black-color">
+                          <span class=" th-pr-5">27 April</span>
+                        </div>
+                        <div class="card-title fw-semibold">Md Wasiur Rahman</div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-12">
-                    <div
-                      class="item th-p-20 d-flex gap-3 rounded-3 th-bg-light-pink th-mb-20"
-                    >
-                      <div class="icon th-primary-color">
-                        <i class="fa-regular fa-code"></i>
+                  <!-- item four -->
+                  <div class="grid-item mockup">
+                    <div class="card border-0 th-bg-light-pink">
+                      <a href="" class="overflow-hidden rounded th-m-10 text-center"><img src="assets/images/work-img-4.png" class="rounded" alt=""></a>
+                      <div class="card-body th-pb-0">
+                        <div class="blog-meta fs-6 th-light-black-color">
+                          <span class=" th-pr-5">27 April</span>
+                        </div>
+                        <div class="card-title fw-semibold th-mt-5">Md Wasiur Rahman</div>
                       </div>
-                      <div class="content">
-                        <h3>Web Development</h3>
-                        <p class="th-light-black-color">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing
-                          elit, sed diam euismod tincidunt volutpat.
-                        </p>
+                    </div>
+                  </div>
+                  <!-- item five -->
+                  <div class="grid-item logo">
+                    <div class="card border-0 th-bg-light-pink">
+                      <a href="" class="overflow-hidden rounded th-m-10 text-center"><img src="assets/images/work-img-5.png" class="rounded" alt=""></a>
+                      <div class="card-body th-pb-0">
+                        <div class="blog-meta fs-6 th-light-black-color">
+                          <span class=" th-pr-5">27 April</span>
+                        </div>
+                        <div class="card-title fw-semibold th-mt-5">Md Wasiur Rahman</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item six -->
+                  <div class="grid-item mockup">
+                    <div class="card border-0 th-bg-light-pink">
+                      <a href="" class="overflow-hidden rounded th-mt-10 text-center"><img src="assets/images/work-img-6.png" class="rounded" alt=""></a>
+                      <div class="card-body th-pb-0">
+                        <div class="blog-meta fs-6 th-light-black-color">
+                          <span class=" th-pr-5">27 April</span>
+                        </div>
+                        <div class="card-title fw-semibold th-mt-5">Md Wasiur Rahman</div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- client section -->
-            <div
-              class="content-area th-bg-white-light th-px-60"
-            >
-              <div class="text-center th-pt-30">
-                <h2 class="th-my-20">Client</h2>
-                <div class="client-logo-slider th-py-40">
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="assets/images/client-logo-1.png" alt="client-logo-1" class="img-fluid"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-2.png" alt="client-logo-2"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-3.png" alt="client-logo-3"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-4.png" alt="client-logo-4"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-1.png" alt="client-logo-1"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-2.png" alt="client-logo-2"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-3.png" alt="client-logo-3"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-4.png" alt="client-logo-4"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-3.png" alt="client-logo-3"></div>
-                      <div class="swiper-slide"><img src="assets/images/client-logo-4.png" alt="client-logo-4"></div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
         <!-- Copywrite section -->
         <div
         class="content-area th-bg-white th-px-60 rounded-bottom-4"
@@ -332,9 +307,11 @@
       </div>
     </section>
     <!-- Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    
     <script src="assets/js/jquery.3.7.1.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js-3.0.6.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
