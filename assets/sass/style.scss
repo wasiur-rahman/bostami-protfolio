@@ -3,12 +3,16 @@
 @use "./utility" as util;
 @use "./mixins";
 
-body {
+.page-wapper {
   background-image: url("/assets/images/page-bg-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  height: 100vh;
   background-position: center center;
+  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .menu-btn {
   background-color: util.$primary-color;
@@ -51,6 +55,15 @@ body {
       opacity: 0;
     }
   }
+}
+// drak theme button
+.dark-btn {
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: util.$white-color;
+  transition: 0.3s;
 }
 
 // menu
@@ -389,3 +402,6 @@ body {
 /*************************
 dark theme
 **************************/
+.dark-theme {
+  background: url("/assets/images/page-bg-dark-1.jpg");
+}

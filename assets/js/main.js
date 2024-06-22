@@ -71,4 +71,15 @@
     $(this).addClass('is-checked');
     });
 
+    // Dark Mode
+      
+
+      $('.dark-btn').click(function(){
+        $('.page-wapper').toggleClass('dark-theme');
+
+        $('.page-wapper').css('background-image', 'url(/assets/images/page-bg-dark-1.jpg)');
+      });
+    
+    
+
 })(jQuery);
