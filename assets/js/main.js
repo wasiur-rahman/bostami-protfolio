@@ -6,12 +6,36 @@
           $(this).toggleClass('active');
           $('.menu-area').toggleClass('active');
       });
-
+// client logo slider
       var swiper1 = new Swiper(".mySwiper", {
           slidesPerView: 5,
           autoplay: {
               delay: 2500,
               disableOnInteraction: false,
+          },breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 2,
+              
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 3,
+              
+            },
+            768: {
+              slidesPerView: 4,
+              
+            },
+            1024: {
+              slidesPerView: 5,
+             
+            },
           },
           centeredSlides: true,
           loop: true,
@@ -21,7 +45,7 @@
               clickable: true,
           },
       });
-
+// blog slider
       var swiper2 = new Swiper(".blogSwiper", {
           slidesPerView: 1,
           spaceBetween: 30,
@@ -73,11 +97,16 @@
 
     // Dark Mode
       
+    // var darkbtn = $('.dark-btn');
 
       $('.dark-btn').click(function(){
-        $('.page-wapper').toggleClass('dark-theme');
 
-        $('.page-wapper').css('background-image', 'url(/assets/images/page-bg-dark-1.jpg)');
+        $('.page-wapper').toggleClass('dark-theme');
+        $('.dark-btn i').toggleClass('fa-moon');
+        $('.dark-btn i').toggleClass('fa-sun');
+
+        
+        // $('.page-wapper').css('background-image', 'url(/assets/images/page-bg-dark-1.jpg)');
       });
     
     

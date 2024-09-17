@@ -403,5 +403,68 @@
 dark theme
 **************************/
 .dark-theme {
-  background: url("/assets/images/page-bg-dark-1.jpg");
+  background: url("/assets/images/page-bg-dark-1.jpg") !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  .th-bg-white {
+    background-color: util.$black-color;
+  }
+  .dark-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: util.$white-color;
+    padding: 5px 10px;
+  }
+  .th-bg-white-light {
+    background-color: util.$black-color-300 !important;
+  }
+  .personal-info {
+    color: util.$light-white-color;
+    .social li a {
+      background-color: util.$black-color-300;
+      &:hover {
+        background-color: util.$primary-color;
+      }
+    }
+  }
+  .contact-info {
+    .icon {
+      background-color: util.$black-color;
+    }
+    .text {
+      color: util.$white-color;
+      span {
+        color: util.$white-color-600;
+      }
+    }
+  }
+
+  button {
+    background-color: util.$black-color;
+  }
+  .top-content-area {
+    color: util.$light-white-color;
+    p {
+      color: util.$white-color-600;
+    }
+  }
+  .middel-content-area {
+    color: util.$light-white-color;
+    .item {
+      background-color: util.$black-color;
+      border: 1px solid util.$black-color-300;
+      p {
+        color: util.$white-color-600;
+      }
+    }
+  }
+  .client-logo-area {
+    background-color: util.$black-color-400 !important;
+    h2 {
+      color: util.$light-white-color;
+    }
+  }
+  .copy-write-area {
+    color: util.$white-color-600;
+  }
 }
